@@ -1,0 +1,15 @@
+<div id="{{$index}}" ng-repeat="bird in $ctrl.birds" ng-class="{'thing': bird.singing, 'open': bird.eye}" class="bird" style="left: {{bird.left}};">
+  <div class="head">
+    <div class="eye"></div>
+    <div class="beak">
+      <div class="inner"></div>
+      <div class="upper"></div>
+      <div class="lower"></div>
+    </div>
+  </div>
+  <div class="feet">
+    <div class="foot left"></div>
+    <div class="foot right"></div>
+  </div>
+  <div ng-show="bird.words" id="caption">{{bird.words}}</div>
+</div>
